@@ -23,7 +23,7 @@ public class TopM {
                 pq.delMin();
         }
         Stack<Transaction> stack = new Stack<Transaction>();
-        for (Transaction transaction : stack) {
+        for (Transaction transaction : pq) {
             stack.push(transaction);
         }
         for (Transaction transaction : stack)
