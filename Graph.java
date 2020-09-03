@@ -47,7 +47,7 @@ public class Graph {
             }
         }
         catch (NoSuchElementException e) {
-            throw new IllegalArgumentException("invalid input format in Graph constructor");
+            throw new IllegalArgumentException("invalid input format in Graph constructor", e);
         }
 
 
