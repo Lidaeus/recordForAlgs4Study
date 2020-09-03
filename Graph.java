@@ -7,7 +7,7 @@
 import java.util.NoSuchElementException;
 
 public class Graph {
-    private static final String NEWLINE = System.getProperty("line.separetor");
+    private static final String NEWLINE = System.getProperty("line.separator");
 
     private final int V;
     private int E;
