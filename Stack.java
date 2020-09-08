@@ -45,6 +45,13 @@ public class Stack<Item> implements Iterable<Item> {
         return item;
     }
 
+    public Item peek() {
+        if (isEmpty()) throw new NoSuchElementException("Stack underflow");
+        return first.item;
+
+    }
+
+
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
