@@ -4,13 +4,13 @@
  *  Last modified:     1/1/2019
  **************************************************************************** */
 
-public class BreadthFirstPath {
+public class BreadthFirstPaths {
     private static final int INFINITY = Integer.MAX_VALUE;
     private boolean[] marked;
     private int[] edgeTo;
     private int[] distTo;
 
-    public BreadthFirstPath(Graph G, int s) {
+    public BreadthFirstPaths(Graph G, int s) {
         marked = new boolean[G.V()];
         distTo = new int[G.V()];
         edgeTo = new int[G.V()];
@@ -20,7 +20,7 @@ public class BreadthFirstPath {
         assert check(G, s);
     }
 
-    public BreadthFirstPath(Graph G, Iterable<Integer> sources) {
+    public BreadthFirstPaths(Graph G, Iterable<Integer> sources) {
         marked = new boolean[G.V()];
         distTo = new int[G.V()];
         edgeTo = new int[G.V()];
