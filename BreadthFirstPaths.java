@@ -150,7 +150,7 @@ public class BreadthFirstPaths {
         In in = new In(args[0]);
         Graph G = new Graph(in);
         int s = Integer.parseInt(args[1]);
-        BreadthFirstPath bfs = new BreadthFirstPath(G, s);
+        BreadthFirstPaths bfs = new BreadthFirstPaths(G, s);
 
         for (int v = 0; v < G.V(); v++) {
             if (bfs.hasPathTo(v)) {
