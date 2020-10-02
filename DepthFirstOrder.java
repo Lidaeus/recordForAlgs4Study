@@ -7,7 +7,6 @@
 
 import edu.princeton.cs.algs4.DirectedEdge;
 import edu.princeton.cs.algs4.EdgeWeightedDigraph;
-import edu.princeton.cs.algs4.EdgeWeightedGraph;
 
 public class DepthFirstOrder {
     private boolean[] marked;
@@ -54,7 +53,7 @@ public class DepthFirstOrder {
         post[v] = postCounter++;
     }
 
-    private void dfs(EdgeWeightedGraph G, int v) {
+    private void dfs(EdgeWeightedDigraph G, int v) {
         marked[v] = true;
         pre[v] = preCounter++;
         preorder.enqueue(v);
