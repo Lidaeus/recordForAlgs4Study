@@ -113,7 +113,7 @@ public class PrimMST {
     public static void main(String[] args) {
         In in = new In(args[0]);
         EdgeWeightedGraph G = new EdgeWeightedGraph(in);
-        LazyPrimMST mst = new LazyPrimMST(G);
+        PrimMST mst = new PrimMST(G);
         for (Edge e : mst.edges()) {
             StdOut.println(e);
         }
