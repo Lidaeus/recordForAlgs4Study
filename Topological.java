@@ -4,7 +4,7 @@
  *  Last modified:     1/1/2019
  **************************************************************************** */
 
-import edu.princeton.cs.algs4.EdgeWeightedDigraph;
+
 import edu.princeton.cs.algs4.EdgeWeightedDirectedCycle;
 
 public class Topological {
@@ -58,6 +58,12 @@ public class Topological {
     }
 
     public static void main(String[] args) {
-
+        String filename = args[0];
+        String delimiter = args[1];
+        SymbolDigraph sg = new SymbolDigraph(filename, delimiter);
+        Topological topological = new Topological(sg.digraph());
+        for (int v : topological.order()) {
+            StdOut.println(sg.nameOf(v));
+        }
     }
 }
