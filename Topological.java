@@ -5,8 +5,6 @@
  **************************************************************************** */
 
 
-import edu.princeton.cs.algs4.EdgeWeightedDirectedCycle;
-
 public class Topological {
     private Iterable<Integer> order;
     private int[] rank;

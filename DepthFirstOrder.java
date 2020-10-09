@@ -5,9 +5,6 @@
  **************************************************************************** */
 
 
-import edu.princeton.cs.algs4.DirectedEdge;
-import edu.princeton.cs.algs4.EdgeWeightedDigraph;
-
 public class DepthFirstOrder {
     private boolean[] marked;
     private int[] pre;
