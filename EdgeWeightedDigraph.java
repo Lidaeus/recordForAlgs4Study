@@ -4,7 +4,6 @@
  *  Last modified:     1/1/2019
  **************************************************************************** */
 
-import edu.princeton.cs.algs4.DirectedEdge;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.NoSuchElementException;
